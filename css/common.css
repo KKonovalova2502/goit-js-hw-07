@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #2e2f42;
+  line-height: 1.5;
+}
+
+/* #region Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+/* #endregion */
+
+/* #region Task 1 */
+#categories {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+
+  border-radius: 8px;
+  padding: 24px;
+  width: 440px;
+  height: 888px;
+
+  background: #fff;
+}
+
+li.item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+
+  background: #f6f6fe;
+}
+
+#categories h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+}
+
+.subitem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+}
+
+.subitem > li {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  padding: 8px 16px;
+}
+/* #endregion */
+
+/* #region Task 2 */
+
+.gallery {
+  width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  margin-top: 24px;
+}
+
+.gallery > li {
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* #endregion */
+
+/* #region Task 3 */
+
+#name-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  padding: 8px 16px;
+  background: #fff;
+  margin-bottom: 16px;
+  margin-top: 24px;
+
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+input::placeholder {
+  color: #2e2f42;
+}
+
+h1,
+#name-output {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+}
+/* #endregion */
+
+/* #region Task 4 */
+
+.login-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* gap: 16px; */
+
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+
+  background: #fff;
+}
+
+.login-form > label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.login-form > label:first-child {
+  margin-bottom: 8px;
+}
+
+.login-form input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+.login-form > button {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+
+  background: #4e75ff;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  border: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.login-form > button:hover,
+.login-form > button:focus {
+  background: #6c8cff;
+}
+
+/* #endregion */
+
+/* #region Task 5 */
+
+.widget {
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto;
+}
+
+.widget > p {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.widget > button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  border: none;
+
+  background: #4e75ff;
+
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.widget > button:hover,
+.widget > button:focus {
+  background: #6c8cff;
+}
+/* #endregion */
+
+/* #region Task 6 */
+
+#controls {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  margin: 0 auto;
+
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+
+  background: #f6f6fe;
+}
+
+#controls > input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px;
+  min-width: 150px;
+  height: 40px;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+#controls > button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  border: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button[data-create] {
+  background: #4e75ff;
+}
+
+button[data-destroy] {
+  background: #ff4e4e;
+}
+
+#boxes {
+  border-radius: 8px;
+  padding: 32px;
+  overflow-x: auto;
+
+  background: #f6f6fe;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  margin-top: 16px;
+}
+
+/* #endregion */
